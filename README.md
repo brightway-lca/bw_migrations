@@ -16,7 +16,7 @@ Most databases use their own nomenclature for classification systems, units, etc
                 # Second element is new values to substitute when all fields match
                 {
                     'unit': 'cubic meter',
-                    'multiplier': 0.001
+                    '__multiplier__': 0.001
                 }
             )
         ]
