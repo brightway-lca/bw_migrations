@@ -4,12 +4,19 @@ from copy import deepcopy
 from pathlib import Path
 import json
 
+DATA_DIR = Path(__file__, "..").resolve() / "data"
+
 
 def get_migration(location):
+    print(list(DATA_DIR.iterdir()))
     if isinstance(location, Mapping):
         return location
+    elif isinstance(location, Path) and Path(location).is_file():
+        return json.load(open(location))
     elif isinstance(location, str) and Path(location).is_file():
         return json.load(open(location))
+    elif isinstance(location, str) and any((location + ".json") in o.name for o in DATA_DIR.iterdir()):
+        return json.load(open(DATA_DIR / (location + ".json")))
     else:
         raise ValueError
 

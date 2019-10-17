@@ -1,4 +1,11 @@
-from bw_migrations.strategies import modify_object, migrate_data
+from bw_migrations.strategies import modify_object, migrate_data, get_migration, DATA_DIR
+
+
+def test_get_migration():
+    assert get_migration({'foo': 'bar'}) == {'foo': 'bar'}
+    assert len(get_migration("exiobase-3-ecoinvent-3.6")['contributors']) == 2
+    assert len(get_migration(DATA_DIR / "exiobase-3-ecoinvent-3.6.json")['contributors']) == 2
+    assert len(get_migration(str(DATA_DIR / "exiobase-3-ecoinvent-3.6.json"))['contributors']) == 2
 
 
 def test_modify_object():
