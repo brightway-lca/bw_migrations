@@ -19,6 +19,7 @@ requirements:
     - setuptools
   run:
     - python
+    - stats_arrays
     - brightway_io-dev
 
 test:

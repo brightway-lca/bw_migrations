@@ -5,6 +5,7 @@ here = path.abspath(path.dirname(__file__))
 
 requirements = [
     'brightway_io',
+    'stats_arrays',
 ]
 test_requirements = ['pytest']
 
