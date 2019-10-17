@@ -581,6 +581,526 @@
         "__multiplier__": 1000,
         "name": "Dioxins, measured as 2,3,7,8-tetrachlorodibenzo-p-dioxin"
       }
+    ],
+    [
+      [
+        "Bauxite and aluminium ores",
+        "tonne",
+        null
+      ],
+      {
+        "unit": "kilogram",
+        "categories": [
+          "natural resource",
+          "in ground"
+        ],
+        "__multiplier__": 1000,
+        "name": "Aluminium, 24% in bauxite, 11% in crude ore, in ground"
+      }
+    ],
+    [
+      [
+        "Chemical and fertilizer minerals",
+        "tonne",
+        null
+      ],
+      [
+        {
+          "unit": "kilogram",
+          "categories": [
+            "natural resource",
+            "in ground"
+          ],
+          "__multiplier__": 1000,
+          "__disaggregation__": 0.5,
+          "name": "Phosphorus, in ground"
+        },
+        {
+          "unit": "kilogram",
+          "categories": [
+            "natural resource",
+            "in ground"
+          ],
+          "__multiplier__": 1000,
+          "__disaggregation__": 0.5,
+          "name": "Potassium, in ground"
+        }
+      ]
+    ],
+    [
+      [
+        "Clays and kaolin",
+        "tonne",
+        null
+      ],
+      [
+        {
+          "unit": "kilogram",
+          "categories": [
+            "natural resource",
+            "in ground"
+          ],
+          "__multiplier__": 1000,
+          "__disaggregation__": 0.5,
+          "name": "Kaolinite, in ground"
+        },
+        {
+          "unit": "kilogram",
+          "categories": [
+            "natural resource",
+            "in ground"
+          ],
+          "__multiplier__": 1000,
+          "__disaggregation__": 0.5,
+          "name": "Clay, unspecified, in ground"
+        }
+      ]
+    ],
+    [
+      [
+        "Copper ores",
+        "tonne",
+        null
+      ],
+      {
+        "unit": "kilogram",
+        "categories": [
+          "natural resource",
+          "in ground"
+        ],
+        "__multiplier__": 1000,
+        "name": "Copper, in ground"
+      }
+    ],
+    [
+      [
+        "Gold ores",
+        "tonne",
+        null
+      ],
+      {
+        "unit": "kilogram",
+        "categories": [
+          "natural resource",
+          "in ground"
+        ],
+        "__multiplier__": 1000,
+        "name": "Gold, in ground"
+      }
+    ],
+    [
+      [
+        "Gravel and sand",
+        "tonne",
+        null
+      ],
+      [
+        {
+          "unit": "kilogram",
+          "categories": [
+            "natural resource",
+            "in ground"
+          ],
+          "__multiplier__": 1000,
+          "__disaggregation__": 0.5,
+          "name": "Gravel, in ground"
+        },
+        {
+          "unit": "kilogram",
+          "categories": [
+            "natural resource",
+            "in ground"
+          ],
+          "__multiplier__": 1000,
+          "__disaggregation__": 0.5,
+          "name": "Sand, unspecified, in ground"
+        }
+      ]
+    ],
+    [
+      [
+        "Iron ores",
+        "tonne",
+        null
+      ],
+      {
+        "unit": "kilogram",
+        "categories": [
+          "natural resource",
+          "in ground"
+        ],
+        "__multiplier__": 1000,
+        "name": "Iron, in ground"
+      }
+    ],
+    [
+      [
+        "Lead ores",
+        "tonne",
+        null
+      ],
+      {
+        "unit": "kilogram",
+        "categories": [
+          "natural resource",
+          "in ground"
+        ],
+        "__multiplier__": 1000,
+        "name": "Lead, in ground"
+      }
+    ],
+    [
+      [
+        "Limestone, gypsum, chalk, dolomite",
+        "tonne",
+        null
+      ],
+      [
+        {
+          "unit": "kilogram",
+          "categories": [
+            "natural resource",
+            "in ground"
+          ],
+          "__multiplier__": 1000,
+          "__disaggregation__": 0.3333333333333333,
+          "name": "Gypsum, in ground"
+        },
+        {
+          "unit": "kilogram",
+          "categories": [
+            "natural resource",
+            "in ground"
+          ],
+          "__multiplier__": 1000,
+          "__disaggregation__": 0.3333333333333333,
+          "name": "Dolomite, in ground"
+        },
+        {
+          "unit": "kilogram",
+          "categories": [
+            "natural resource",
+            "in ground"
+          ],
+          "__multiplier__": 1000,
+          "__disaggregation__": 0.3333333333333333,
+          "name": "Gypsum, in ground"
+        }
+      ]
+    ],
+    [
+      [
+        "Marine fish catch",
+        "tonne",
+        null
+      ],
+      [
+        {
+          "unit": "kilogram",
+          "categories": [
+            "natural resource",
+            "in ground"
+          ],
+          "__multiplier__": 1000,
+          "__disaggregation__": 0.5,
+          "name": "Fish, demersal, in ocean"
+        },
+        {
+          "unit": "kilogram",
+          "categories": [
+            "natural resource",
+            "in ground"
+          ],
+          "__multiplier__": 1000,
+          "__disaggregation__": 0.5,
+          "name": "Fish, pelagic, in ocean"
+        }
+      ]
+    ],
+    [
+      [
+        "Nickel ores",
+        "tonne",
+        null
+      ],
+      {
+        "unit": "kilogram",
+        "categories": [
+          "natural resource",
+          "in ground"
+        ],
+        "__multiplier__": 1000,
+        "name": "Nickel, in ground"
+      }
+    ],
+    [
+      [
+        "PGM ores",
+        "tonne",
+        null
+      ],
+      {
+        "unit": "kilogram",
+        "categories": [
+          "natural resource",
+          "in ground"
+        ],
+        "__multiplier__": 1000,
+        "name": "Platinum, in ground"
+      }
+    ],
+    [
+      [
+        "Silver ores",
+        "tonne",
+        null
+      ],
+      {
+        "unit": "kilogram",
+        "categories": [
+          "natural resource",
+          "in ground"
+        ],
+        "__multiplier__": 1000,
+        "name": "Silver, in ground"
+      }
+    ],
+    [
+      [
+        "Tin ores",
+        "tonne",
+        null
+      ],
+      {
+        "unit": "kilogram",
+        "categories": [
+          "natural resource",
+          "in ground"
+        ],
+        "__multiplier__": 1000,
+        "name": "Tin, in ground"
+      }
+    ],
+    [
+      [
+        "Uranium and thorium ores",
+        "tonne",
+        null
+      ],
+      [
+        {
+          "unit": "kilogram",
+          "categories": [
+            "natural resource",
+            "in ground"
+          ],
+          "__multiplier__": 1000,
+          "__disaggregation__": 0.5,
+          "name": "Thorium, in ground"
+        },
+        {
+          "unit": "kilogram",
+          "categories": [
+            "natural resource",
+            "in ground"
+          ],
+          "__multiplier__": 1000,
+          "__disaggregation__": 0.5,
+          "name": "Uranium, in ground"
+        }
+      ]
+    ],
+    [
+      [
+        "Zinc ores",
+        "tonne",
+        null
+      ],
+      {
+        "unit": "kilogram",
+        "categories": [
+          "natural resource",
+          "in ground"
+        ],
+        "__multiplier__": 1000,
+        "name": "Zinc, in ground"
+      }
+    ],
+    [
+      [
+        "Crude oil",
+        "tonne",
+        null
+      ],
+      {
+        "unit": "kilogram",
+        "categories": [
+          "natural resource",
+          "in ground"
+        ],
+        "__multiplier__": 1000,
+        "name": "Oil, crude, in ground"
+      }
+    ],
+    [
+      [
+        "Natural gas",
+        "tonne",
+        null
+      ],
+      {
+        "unit": "kilogram",
+        "categories": [
+          "natural resource",
+          "in ground"
+        ],
+        "__multiplier__": 1000,
+        "name": "Gas, natural, in ground"
+      }
+    ],
+    [
+      [
+        "Natural gas liquids",
+        "tonne",
+        null
+      ],
+      {
+        "unit": "kilogram",
+        "categories": [
+          "natural resource",
+          "in ground"
+        ],
+        "__multiplier__": 1000,
+        "name": "Gas, natural, in ground"
+      }
+    ],
+    [
+      [
+        "Peat",
+        "tonne",
+        null
+      ],
+      {
+        "unit": "kilogram",
+        "categories": [
+          "natural resource",
+          "in ground"
+        ],
+        "__multiplier__": 1000,
+        "name": "Peat, in ground"
+      }
+    ],
+    [
+      [
+        "Anthracite",
+        "tonne",
+        null
+      ],
+      {
+        "unit": "kilogram",
+        "categories": [
+          "natural resource",
+          "in ground"
+        ],
+        "__multiplier__": 1000,
+        "name": "Coal, hard, unspecified, in ground"
+      }
+    ],
+    [
+      [
+        "Coking coal",
+        "tonne",
+        null
+      ],
+      {
+        "unit": "kilogram",
+        "categories": [
+          "natural resource",
+          "in ground"
+        ],
+        "__multiplier__": 1000,
+        "name": "Coal, hard, unspecified, in ground"
+      }
+    ],
+    [
+      [
+        "Lignite/brown coal",
+        "tonne",
+        null
+      ],
+      {
+        "unit": "kilogram",
+        "categories": [
+          "natural resource",
+          "in ground"
+        ],
+        "__multiplier__": 1000,
+        "name": "Coal, brown, in ground"
+      }
+    ],
+    [
+      [
+        "Other bituminous coal",
+        "tonne",
+        null
+      ],
+      {
+        "unit": "kilogram",
+        "categories": [
+          "natural resource",
+          "in ground"
+        ],
+        "__multiplier__": 1000,
+        "name": "Coal, brown, in ground"
+      }
+    ],
+    [
+      [
+        "Sub-bituminous coal",
+        "tonne",
+        null
+      ],
+      {
+        "unit": "kilogram",
+        "categories": [
+          "natural resource",
+          "in ground"
+        ],
+        "__multiplier__": 1000,
+        "name": "Coal, brown, in ground"
+      }
+    ],
+    [
+      [
+        "Carbon dioxide, in air",
+        "tonne",
+        null
+      ],
+      {
+        "unit": "kilogram",
+        "categories": [
+          "natural resource",
+          "in ground"
+        ],
+        "__multiplier__": 1000,
+        "name": "Carbon dioxide, non-fossil"
+      }
+    ],
+    [
+      [
+        "Water Consumption Blue",
+        "Mm3",
+        null
+      ],
+      {
+        "unit": "kilogram",
+        "categories": [
+          "natural resource",
+          "in water"
+        ],
+        "__multiplier__": 1000000.0,
+        "name": "Water, unspecified natural origin"
+      }
     ]
   ],
   "license": {
