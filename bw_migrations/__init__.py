@@ -1,8 +1,6 @@
 from .version import version as __version__
 
-__all__ = (
-    'migrate_data'
-)
+__all__ = "migrate_data"
 
 from .strategies import migrate_data
 

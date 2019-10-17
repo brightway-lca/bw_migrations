@@ -15,22 +15,22 @@ def get_migration(location):
 
 
 def modify_object(obj, dct):
-    scale = dct.get('__disaggregation__', 1) * dct.get("__multiplier__", 1)
+    scale = dct.get("__disaggregation__", 1) * dct.get("__multiplier__", 1)
     if scale != 1:
         obj = rescale_object(obj, scale)
     for k, v in dct.items():
-        if k not in ('__disaggregation__', '__multiplier__'):
+        if k not in ("__disaggregation__", "__multiplier__"):
             obj[k] = v
     return obj
 
 
 def migrate_data(data, migration):
     migration_data = get_migration(migration)
-    lookup = {tuple(x): y for x, y in migration_data['data']}
+    lookup = {tuple(x): y for x, y in migration_data["data"]}
 
     for row in data:
         try:
-            new = lookup[tuple([row.get(field) for field in migration_data['fields']])]
+            new = lookup[tuple([row.get(field) for field in migration_data["fields"]])]
             if isinstance(new, list):
                 for dct in new:
                     yield modify_object(deepcopy(row), dct)
