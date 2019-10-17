@@ -28,5 +28,5 @@ test:
 about:
   home: "https://github.com/brightway-lca/bw_migrations"
   license: BSD License
-  summary: 'Description'
+  summary: 'Migration data and utilities for Brightway IO and LCA in general'
 license_family: BSD

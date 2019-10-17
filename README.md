@@ -1,4 +1,4 @@
 # bw_migrations
 
-Description
+Migration data and utilities for Brightway IO and LCA in general
 

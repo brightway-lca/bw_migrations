@@ -17,7 +17,7 @@ version = ".".join((str(x) for x in v_temp['version']))
 setup(
     name='bw_migrations',
     version=version,
-    description='Description',
+    description='Migration data and utilities for Brightway IO and LCA in general',
     long_description=open(path.join(here, "README.md")).read(),
     url='https://github.com/brightway-lca/bw_migrations',
     author='Chris Mutel',
