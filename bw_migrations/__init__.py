@@ -5,7 +5,7 @@ __all__ = (
     "migrate_data",
 )
 
-from .strategies import migrate_data
+from .strategies import migrate_data, get_migration
 
 
 # def create_core_migrations():

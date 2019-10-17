@@ -8,7 +8,6 @@ DATA_DIR = Path(__file__, "..").resolve() / "data"
 
 
 def get_migration(location):
-    print(list(DATA_DIR.iterdir()))
     if isinstance(location, Mapping):
         return location
     elif isinstance(location, Path) and Path(location).is_file():
