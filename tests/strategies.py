@@ -35,53 +35,72 @@ def test_modify_object_with_both():
 
 def test_migrate_data():
     migration = {
-        'fields': ['a', 'b'],
-        'data': [(
-            ('green', 'brown'),
-            {
-                'a': 'blue',
-                'another': 'value'
-            }
-        )]
+        "fields": ["a", "b"],
+        "data": [(("green", "brown"), {"a": "blue", "another": "value"})],
     }
-    given = [{"a": 5, "b": "foo"}, {"a": "green", "b": "foo"}, {"a": "green", "b": "brown"}]
-    expected = [{"a": 5, "b": "foo"}, {"a": "green", "b": "foo"}, {"a": "blue", "b": "brown", "another": "value"}]
+    given = [
+        {"a": 5, "b": "foo"},
+        {"a": "green", "b": "foo"},
+        {"a": "green", "b": "brown"},
+    ]
+    expected = [
+        {"a": 5, "b": "foo"},
+        {"a": "green", "b": "foo"},
+        {"a": "blue", "b": "brown", "another": "value"},
+    ]
     assert list(migrate_data(given, migration)) == expected
 
 
 def test_migrate_data_disaggregation():
     migration = {
-        'fields': ['a', 'b'],
-        'data': [(
-            ('green', 'brown'),
-            [{
-                'a': 'blue',
-                'another': 'value',
-                '__multiplier__': 0.5,
-                '__disaggregation__': 0.3,
-            }, {
-                'a': 'red',
-                '__disaggregation__': 0.7,
-            }]
-        )]
+        "fields": ["a", "b"],
+        "data": [
+            (
+                ("green", "brown"),
+                [
+                    {
+                        "a": "blue",
+                        "another": "value",
+                        "__multiplier__": 0.5,
+                        "__disaggregation__": 0.3,
+                    },
+                    {"a": "red", "__disaggregation__": 0.7},
+                ],
+            )
+        ],
     }
-    given = [{"a": 5, "b": "foo"}, {"a": "green", "b": "foo"}, {"a": "green", "b": "brown", "amount": 10}]
-    expected = [{"a": 5, "b": "foo"}, {"a": "green", "b": "foo"}, {"a": "blue", "b": "brown", "another": "value", "amount": 1.5}, {"a": "red", "b": "brown", "amount": 7}]
+    given = [
+        {"a": 5, "b": "foo"},
+        {"a": "green", "b": "foo"},
+        {"a": "green", "b": "brown", "amount": 10},
+    ]
+    expected = [
+        {"a": 5, "b": "foo"},
+        {"a": "green", "b": "foo"},
+        {"a": "blue", "b": "brown", "another": "value", "amount": 1.5},
+        {"a": "red", "b": "brown", "amount": 7},
+    ]
     assert list(migrate_data(given, migration)) == expected
 
 
 def test_migrate_data_multiplier():
     migration = {
-        'fields': ['a', 'b'],
-        'data': [(
-            ('green', 'brown'),
-            {
-                'a': 'blue',
-                'another': 'value',
-                '__multiplier__': 0.5
-            }
-        )]
+        "fields": ["a", "b"],
+        "data": [
+            (
+                ("green", "brown"),
+                {"a": "blue", "another": "value", "__multiplier__": 0.5},
+            )
+        ],
     }
-    given = [{"a": 5, "b": "foo"}, {"a": "green", "b": "foo"}, {"a": "green", "b": "brown", "amount": 4}]
-    expected = [{"a": 5, "b": "foo"}, {"a": "green", "b": "foo"}, {"a": "blue", "b": "brown", "another": "value", "amount": 2}]
+    given = [
+        {"a": 5, "b": "foo"},
+        {"a": "green", "b": "foo"},
+        {"a": "green", "b": "brown", "amount": 4},
+    ]
+    expected = [
+        {"a": 5, "b": "foo"},
+        {"a": "green", "b": "foo"},
+        {"a": "blue", "b": "brown", "another": "value", "amount": 2},
+    ]
     assert list(migrate_data(given, migration)) == expected
