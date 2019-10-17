@@ -21,6 +21,7 @@ setup(
     author="Chris Mutel",
     author_email="cmutel@gmail.com",
     license="NewBSD 3-clause; LICENSE",
+    package_data={'bw_migrations': ["data/*.json"]},
     classifiers=[
         "Development Status :: 3 - Alpha",
         "Intended Audience :: Science/Research",
