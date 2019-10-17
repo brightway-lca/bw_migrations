@@ -192,6 +192,17 @@
     ],
     [
       [
+        "Cd",
+        "soil"
+      ],
+      {
+        "unit": "kilogram",
+        "__multiplier__": 1000,
+        "name": "Cadmium"
+      }
+    ],
+    [
+      [
         "Chlordane",
         "air"
       ],
@@ -214,8 +225,30 @@
     ],
     [
       [
+        "Cr",
+        "soil"
+      ],
+      {
+        "unit": "kilogram",
+        "__multiplier__": 1000,
+        "name": "Chromium"
+      }
+    ],
+    [
+      [
         "Cu",
         "air"
+      ],
+      {
+        "unit": "kilogram",
+        "__multiplier__": 1000,
+        "name": "Copper"
+      }
+    ],
+    [
+      [
+        "Cu",
+        "soil"
       ],
       {
         "unit": "kilogram",
@@ -363,6 +396,17 @@
     ],
     [
       [
+        "Hg",
+        "soil"
+      ],
+      {
+        "unit": "kilogram",
+        "__multiplier__": 1000,
+        "name": "Mercury"
+      }
+    ],
+    [
+      [
         "Indeno-[1,2,3-cd]-pyrene",
         "air"
       ],
@@ -376,6 +420,17 @@
       [
         "N",
         "water"
+      ],
+      {
+        "unit": "kilogram",
+        "__multiplier__": 1000,
+        "name": "Nitrogen"
+      }
+    ],
+    [
+      [
+        "N",
+        "soil"
       ],
       {
         "unit": "kilogram",
@@ -440,8 +495,30 @@
     ],
     [
       [
+        "Ni",
+        "soil"
+      ],
+      {
+        "unit": "kilogram",
+        "__multiplier__": 1000,
+        "name": "Nickel"
+      }
+    ],
+    [
+      [
         "P",
         "water"
+      ],
+      {
+        "unit": "kilogram",
+        "__multiplier__": 1000,
+        "name": "Phosphorus"
+      }
+    ],
+    [
+      [
+        "P",
+        "soil"
       ],
       {
         "unit": "kilogram",
@@ -517,6 +594,17 @@
     ],
     [
       [
+        "Pb",
+        "soil"
+      ],
+      {
+        "unit": "kilogram",
+        "__multiplier__": 1000,
+        "name": "Lead"
+      }
+    ],
+    [
+      [
         "SF6",
         "air"
       ],
@@ -564,6 +652,17 @@
       [
         "Zn",
         "air"
+      ],
+      {
+        "unit": "kilogram",
+        "__multiplier__": 1000,
+        "name": "Zinc"
+      }
+    ],
+    [
+      [
+        "Zn",
+        "soil"
       ],
       {
         "unit": "kilogram",
