@@ -1,0 +1,635 @@
+{
+  "fields": [
+    "name",
+    "categories"
+  ],
+  "data": [
+    [
+      [
+        "1,3 Butadiene",
+        "air"
+      ],
+      {
+        "unit": "kilogram",
+        "__multiplier__": 1000,
+        "name": "Butadiene"
+      }
+    ],
+    [
+      [
+        "Aldrin",
+        "air"
+      ],
+      {
+        "unit": "kilogram",
+        "__multiplier__": 1000,
+        "name": "Aldrin"
+      }
+    ],
+    [
+      [
+        "As",
+        "air"
+      ],
+      {
+        "unit": "kilogram",
+        "__multiplier__": 1000,
+        "name": "Arsenic"
+      }
+    ],
+    [
+      [
+        "Benzene",
+        "air"
+      ],
+      {
+        "unit": "kilogram",
+        "__multiplier__": 1000
+      }
+    ],
+    [
+      [
+        "Benzo-[k]-fluoranthene",
+        "air"
+      ],
+      {
+        "unit": "kilogram",
+        "__multiplier__": 1000,
+        "name": "Benzo(k)fluoranthene"
+      }
+    ],
+    [
+      [
+        "BOD",
+        "water"
+      ],
+      {
+        "unit": "kilogram",
+        "__multiplier__": 1000,
+        "name": "BOD5, Biological Oxygen Demand"
+      }
+    ],
+    [
+      [
+        "Benzo-[a]-pyrene",
+        "air"
+      ],
+      {
+        "unit": "kilogram",
+        "__multiplier__": 1000,
+        "name": "Benzo(a)pyrene"
+      }
+    ],
+    [
+      [
+        "Benzo-[b]-fluoranthene",
+        "air"
+      ],
+      {
+        "unit": "kilogram",
+        "__multiplier__": 1000,
+        "name": "Benzo(b)fluoranthene"
+      }
+    ],
+    [
+      [
+        "CFCs",
+        "air"
+      ],
+      [
+        {
+          "unit": "kilogram",
+          "__multiplier__": 1000,
+          "__disaggregation__": 0.16666666666666666,
+          "name": "Ethane, 1,1,2-trichloro-1,2,2-trifluoro-, CFC-113"
+        },
+        {
+          "unit": "kilogram",
+          "__multiplier__": 1000,
+          "__disaggregation__": 0.16666666666666666,
+          "name": "Ethane, 1,2-dichloro-1,1,2,2-tetrafluoro-, CFC-114"
+        },
+        {
+          "unit": "kilogram",
+          "__multiplier__": 1000,
+          "__disaggregation__": 0.16666666666666666,
+          "name": "Ethane, chloropentafluoro-, CFC-115"
+        },
+        {
+          "unit": "kilogram",
+          "__multiplier__": 1000,
+          "__disaggregation__": 0.16666666666666666,
+          "name": "Methane, chlorotrifluoro-, CFC-13"
+        },
+        {
+          "unit": "kilogram",
+          "__multiplier__": 1000,
+          "__disaggregation__": 0.16666666666666666,
+          "name": "Methane, dichlorodifluoro-, CFC-12"
+        },
+        {
+          "unit": "kilogram",
+          "__multiplier__": 1000,
+          "__disaggregation__": 0.16666666666666666,
+          "name": "Methane, trichlorofluoro-, CFC-11"
+        }
+      ]
+    ],
+    [
+      [
+        "CH4",
+        "air"
+      ],
+      {
+        "unit": "kilogram",
+        "__multiplier__": 1000,
+        "name": "Methane, fossil"
+      }
+    ],
+    [
+      [
+        "CO ",
+        "air"
+      ],
+      {
+        "unit": "kilogram",
+        "__multiplier__": 1000,
+        "name": "Carbon monoxide, fossil"
+      }
+    ],
+    [
+      [
+        "Carbon dioxide, biogenic",
+        "air"
+      ],
+      {
+        "unit": "kilogram",
+        "__multiplier__": 1000,
+        "name": "Carbon dioxide, non-fossil"
+      }
+    ],
+    [
+      [
+        "Carbon dioxide, fossil",
+        "air"
+      ],
+      {
+        "unit": "kilogram",
+        "__multiplier__": 1000,
+        "name": "Carbon dioxide, fossil"
+      }
+    ],
+    [
+      [
+        "Cd",
+        "air"
+      ],
+      {
+        "unit": "kilogram",
+        "__multiplier__": 1000,
+        "name": "Cadmium"
+      }
+    ],
+    [
+      [
+        "Chlordane",
+        "air"
+      ],
+      {
+        "unit": "kilogram",
+        "__multiplier__": 1000,
+        "name": "Chlordane"
+      }
+    ],
+    [
+      [
+        "Cr",
+        "air"
+      ],
+      {
+        "unit": "kilogram",
+        "__multiplier__": 1000,
+        "name": "Chromium"
+      }
+    ],
+    [
+      [
+        "Cu",
+        "air"
+      ],
+      {
+        "unit": "kilogram",
+        "__multiplier__": 1000,
+        "name": "Copper"
+      }
+    ],
+    [
+      [
+        "Formaldehyd",
+        "air"
+      ],
+      {
+        "unit": "kilogram",
+        "__multiplier__": 1000,
+        "name": "Formaldehyde"
+      }
+    ],
+    [
+      [
+        "Furans",
+        "air"
+      ],
+      {
+        "unit": "kilogram",
+        "__multiplier__": 1000,
+        "name": "Furan"
+      }
+    ],
+    [
+      [
+        "HCH",
+        "air"
+      ],
+      {
+        "unit": "kilogram",
+        "__multiplier__": 1000,
+        "name": "Benzene, hexachloro-"
+      }
+    ],
+    [
+      [
+        "HCFCs",
+        "air"
+      ],
+      [
+        {
+          "unit": "kilogram",
+          "__multiplier__": 1000,
+          "__disaggregation__": 0.125,
+          "name": "Ethane, 1,1-dichloro-1-fluoro-, HCFC-141b"
+        },
+        {
+          "unit": "kilogram",
+          "__multiplier__": 1000,
+          "__disaggregation__": 0.125,
+          "name": "Ethane, 1-chloro-1,1-difluoro-, HCFC-142b"
+        },
+        {
+          "unit": "kilogram",
+          "__multiplier__": 1000,
+          "__disaggregation__": 0.125,
+          "name": "Ethane, 2,2-dichloro-1,1,1-trifluoro-, HCFC-123"
+        },
+        {
+          "unit": "kilogram",
+          "__multiplier__": 1000,
+          "__disaggregation__": 0.125,
+          "name": "Ethane, 2-chloro-1,1,1,2-tetrafluoro-, HCFC-124"
+        },
+        {
+          "unit": "kilogram",
+          "__multiplier__": 1000,
+          "__disaggregation__": 0.125,
+          "name": "Methane, dichlorofluoro-, HCFC-21"
+        },
+        {
+          "unit": "kilogram",
+          "__multiplier__": 1000,
+          "__disaggregation__": 0.125,
+          "name": "Methane, chloro-fluoro-, HCFC-31"
+        },
+        {
+          "unit": "kilogram",
+          "__multiplier__": 1000,
+          "__disaggregation__": 0.125,
+          "name": "Methane, chlorodifluoro-, HCFC-22"
+        },
+        {
+          "unit": "kilogram",
+          "__multiplier__": 1000,
+          "__disaggregation__": 0.125,
+          "name": "Ethane, 1,1,1-trichloro-, HCFC-140"
+        }
+      ]
+    ],
+    [
+      [
+        "HFCs",
+        "air"
+      ],
+      [
+        {
+          "unit": "kilogram",
+          "__multiplier__": 1000,
+          "__disaggregation__": 0.2,
+          "name": "Ethane, 1,1,1,2-tetrafluoro-, HFC-134a"
+        },
+        {
+          "unit": "kilogram",
+          "__multiplier__": 1000,
+          "__disaggregation__": 0.2,
+          "name": "Methane, difluoro-, HFC-32"
+        },
+        {
+          "unit": "kilogram",
+          "__multiplier__": 1000,
+          "__disaggregation__": 0.2,
+          "name": "Ethane, pentafluoro-, HFC-125"
+        },
+        {
+          "unit": "kilogram",
+          "__multiplier__": 1000,
+          "__disaggregation__": 0.2,
+          "name": "Ethane, hexafluoro-, HFC-116"
+        },
+        {
+          "unit": "kilogram",
+          "__multiplier__": 1000,
+          "__disaggregation__": 0.2,
+          "name": "Ethane, 1,1-difluoro-, HFC-152a"
+        }
+      ]
+    ],
+    [
+      [
+        "Hg",
+        "air"
+      ],
+      {
+        "unit": "kilogram",
+        "__multiplier__": 1000,
+        "name": "Mercury"
+      }
+    ],
+    [
+      [
+        "Indeno-[1,2,3-cd]-pyrene",
+        "air"
+      ],
+      {
+        "unit": "kilogram",
+        "__multiplier__": 1000,
+        "name": "Indeno(1,2,3-cd)pyrene"
+      }
+    ],
+    [
+      [
+        "N",
+        "water"
+      ],
+      {
+        "unit": "kilogram",
+        "__multiplier__": 1000,
+        "name": "Nitrogen"
+      }
+    ],
+    [
+      [
+        "N2O",
+        "air"
+      ],
+      {
+        "unit": "kilogram",
+        "__multiplier__": 1000,
+        "name": "Dinitrogen monoxide"
+      }
+    ],
+    [
+      [
+        "NH3",
+        "air"
+      ],
+      {
+        "unit": "kilogram",
+        "__multiplier__": 1000,
+        "name": "Ammonia"
+      }
+    ],
+    [
+      [
+        "NMVOC",
+        "air"
+      ],
+      {
+        "unit": "kilogram",
+        "__multiplier__": 1000,
+        "name": "NMVOC, non-methane volatile organic compounds, unspecified origin"
+      }
+    ],
+    [
+      [
+        "NOX ",
+        "air"
+      ],
+      {
+        "unit": "kilogram",
+        "__multiplier__": 1000,
+        "name": "Nitrogen oxides"
+      }
+    ],
+    [
+      [
+        "Ni",
+        "air"
+      ],
+      {
+        "unit": "kilogram",
+        "__multiplier__": 1000,
+        "name": "Nickel"
+      }
+    ],
+    [
+      [
+        "P",
+        "water"
+      ],
+      {
+        "unit": "kilogram",
+        "__multiplier__": 1000,
+        "name": "Phosphorus"
+      }
+    ],
+    [
+      [
+        "PAH (total of 4 components, sum of EM_AIR.43, 45, 46, 47)",
+        "air"
+      ],
+      {
+        "unit": "kilogram",
+        "__multiplier__": 1000,
+        "name": "PAH, polycyclic aromatic hydrocarbons"
+      }
+    ],
+    [
+      [
+        "PCB",
+        "air"
+      ],
+      {
+        "unit": "kilogram",
+        "__multiplier__": 1000,
+        "name": "Polychlorinated biphenyls"
+      }
+    ],
+    [
+      [
+        "PFCs",
+        "air"
+      ],
+      {
+        "unit": "kilogram",
+        "__multiplier__": 1000,
+        "name": "Perfluoropentane"
+      }
+    ],
+    [
+      [
+        "PM10",
+        "air"
+      ],
+      {
+        "unit": "kilogram",
+        "__multiplier__": 1000,
+        "name": "Particulates, > 2.5 um, and < 10um"
+      }
+    ],
+    [
+      [
+        "PM2.5",
+        "air"
+      ],
+      {
+        "unit": "kilogram",
+        "__multiplier__": 1000,
+        "name": "Particulates, < 2.5 um"
+      }
+    ],
+    [
+      [
+        "Pb",
+        "air"
+      ],
+      {
+        "unit": "kilogram",
+        "__multiplier__": 1000,
+        "name": "Lead"
+      }
+    ],
+    [
+      [
+        "SF6",
+        "air"
+      ],
+      {
+        "unit": "kilogram",
+        "__multiplier__": 1000,
+        "name": "Sulfur hexafluoride"
+      }
+    ],
+    [
+      [
+        "SOx",
+        "air"
+      ],
+      {
+        "unit": "kilogram",
+        "__multiplier__": 1000,
+        "name": "Sulfur oxides"
+      }
+    ],
+    [
+      [
+        "Se",
+        "air"
+      ],
+      {
+        "unit": "kilogram",
+        "__multiplier__": 1000,
+        "name": "Selenium"
+      }
+    ],
+    [
+      [
+        "TSP (total suspended particulate)",
+        "air"
+      ],
+      {
+        "unit": "kilogram",
+        "__multiplier__": 1000,
+        "name": "Suspended solids, unspecified",
+        "categories": ["water"]
+      }
+    ],
+    [
+      [
+        "Zn",
+        "air"
+      ],
+      {
+        "unit": "kilogram",
+        "__multiplier__": 1000,
+        "name": "Zinc"
+      }
+    ],
+    [
+      [
+        "dioxin",
+        "air"
+      ],
+      {
+        "unit": "kilogram",
+        "__multiplier__": 1000,
+        "name": "Dioxins, measured as 2,3,7,8-tetrachlorodibenzo-p-dioxin"
+      }
+    ]
+  ],
+  "license": {
+    "name": "ODC-PDDL-1.0",
+    "path": "http://opendatacommons.org/licenses/pddl/",
+    "title": "Open Data Commons Public Domain Dedication and License v1.0"
+  },
+  "version": 1,
+  "contributors": [
+    {
+      "title": "Massimo Pizzol",
+      "email": "massimo@plan.aau.dk",
+      "path": "https://moutreach.science/",
+      "role": "author"
+    },
+    {
+      "title": "Chris Mutel",
+      "email": "cmutel@gmail.com",
+      "path": "https://chris.mutel.org/",
+      "role": "author"
+    }
+  ],
+  "missing flows": [
+    "Aquatic plants",
+    "Building stones",
+    "C",
+    "Chlordecone",
+    "DDT",
+    "Dieldrin",
+    "Endrin",
+    "HCB",
+    "Heptachlor",
+    "Hexabr.-biph.",
+    "Inland waters fish catch",
+    "Minerals nec. (incl nitrogen and hydrogen)",
+    "Mirex",
+    "Other (e.g. Aquatic mammals)",
+    "Other emissions nec",
+    "Other minerals",
+    "Other non-ferrous metal ores",
+    "Oxygen",
+    "PBDEs",
+    "PCDD/F (dioxins and furans)",
+    "Salt",
+    "Slate",
+    "Toxaphene",
+    "Water Consumption Green",
+    "Water Withdrawal Blue",
+    "other emissions"
+  ],
+  "comment": "Changed TSP from air to water (think this is a mistake). Many missing flows are banned persistent organics. Only included blue water consumption, as this is the only environmentally relevant number. PCDD not included as dioxins and furans are given separately."
+}
