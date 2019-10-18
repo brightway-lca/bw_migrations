@@ -684,7 +684,6 @@
     [
       [
         "Bauxite and aluminium ores",
-        "tonne",
         null
       ],
       {
@@ -700,7 +699,6 @@
     [
       [
         "Chemical and fertilizer minerals",
-        "tonne",
         null
       ],
       [
@@ -729,7 +727,6 @@
     [
       [
         "Clays and kaolin",
-        "tonne",
         null
       ],
       [
@@ -758,7 +755,6 @@
     [
       [
         "Copper ores",
-        "tonne",
         null
       ],
       {
@@ -774,7 +770,6 @@
     [
       [
         "Gold ores",
-        "tonne",
         null
       ],
       {
@@ -790,7 +785,6 @@
     [
       [
         "Gravel and sand",
-        "tonne",
         null
       ],
       [
@@ -819,7 +813,6 @@
     [
       [
         "Iron ores",
-        "tonne",
         null
       ],
       {
@@ -835,7 +828,6 @@
     [
       [
         "Lead ores",
-        "tonne",
         null
       ],
       {
@@ -851,7 +843,6 @@
     [
       [
         "Limestone, gypsum, chalk, dolomite",
-        "tonne",
         null
       ],
       [
@@ -890,7 +881,6 @@
     [
       [
         "Marine fish catch",
-        "tonne",
         null
       ],
       [
@@ -919,7 +909,6 @@
     [
       [
         "Nickel ores",
-        "tonne",
         null
       ],
       {
@@ -935,7 +924,6 @@
     [
       [
         "PGM ores",
-        "tonne",
         null
       ],
       {
@@ -951,7 +939,6 @@
     [
       [
         "Silver ores",
-        "tonne",
         null
       ],
       {
@@ -967,7 +954,6 @@
     [
       [
         "Tin ores",
-        "tonne",
         null
       ],
       {
@@ -983,7 +969,6 @@
     [
       [
         "Uranium and thorium ores",
-        "tonne",
         null
       ],
       [
@@ -1012,7 +997,6 @@
     [
       [
         "Zinc ores",
-        "tonne",
         null
       ],
       {
@@ -1028,7 +1012,6 @@
     [
       [
         "Crude oil",
-        "tonne",
         null
       ],
       {
@@ -1044,7 +1027,6 @@
     [
       [
         "Natural gas",
-        "tonne",
         null
       ],
       {
@@ -1060,7 +1042,6 @@
     [
       [
         "Natural gas liquids",
-        "tonne",
         null
       ],
       {
@@ -1076,7 +1057,6 @@
     [
       [
         "Peat",
-        "tonne",
         null
       ],
       {
@@ -1092,7 +1072,6 @@
     [
       [
         "Anthracite",
-        "tonne",
         null
       ],
       {
@@ -1108,7 +1087,6 @@
     [
       [
         "Coking coal",
-        "tonne",
         null
       ],
       {
@@ -1124,7 +1102,6 @@
     [
       [
         "Lignite/brown coal",
-        "tonne",
         null
       ],
       {
@@ -1140,7 +1117,6 @@
     [
       [
         "Other bituminous coal",
-        "tonne",
         null
       ],
       {
@@ -1156,7 +1132,6 @@
     [
       [
         "Sub-bituminous coal",
-        "tonne",
         null
       ],
       {
@@ -1172,7 +1147,6 @@
     [
       [
         "Carbon dioxide, in air",
-        "tonne",
         null
       ],
       {
@@ -1188,7 +1162,6 @@
     [
       [
         "Water Consumption Blue",
-        "Mm3",
         null
       ],
       {
@@ -1199,6 +1172,81 @@
         ],
         "__multiplier__": 1000000.0,
         "name": "Water, unspecified natural origin"
+      }
+    ],
+    [
+      [
+        "Land use, arable land",
+        null
+      ],
+      {
+        "unit": "square meter-year",
+        "categories": [
+          "natural resource",
+          "land"
+        ],
+        "__multiplier__": 10000.0,
+        "name": "Occupation, arable land, unspecified use"
+      }
+    ],
+    [
+      [
+        "Land use, forest land",
+        null
+      ],
+      {
+        "unit": "square meter-year",
+        "categories": [
+          "natural resource",
+          "land"
+        ],
+        "__multiplier__": 10000.0,
+        "name": "Occupation, forest, unspecified"
+      }
+    ],
+    [
+      [
+        "Land use, grassland",
+        null
+      ],
+      {
+        "unit": "square meter-year",
+        "categories": [
+          "natural resource",
+          "land"
+        ],
+        "__multiplier__": 10000.0,
+        "name": "Occupation, grassland, natural, for livestock grazing"
+      }
+    ],
+    [
+      [
+        "Land use, other land for woodfuel",
+        null
+      ],
+      {
+        "unit": "square meter-year",
+        "categories": [
+          "natural resource",
+          "land"
+        ],
+        "__multiplier__": 10000.0,
+        "name": "Occupation, forest, extensive"
+      }
+    ],
+    [
+      [
+        "Land use, infrastructure land",
+        null
+      ],
+      {
+        "unit": "square meter-year",
+        "categories": [
+          "natural resource",
+          "land"
+        ],
+        "__multiplier__": 10000.0,
+        "name": "Occupation, urban, discontinuously built"
       }
     ]
   ],
