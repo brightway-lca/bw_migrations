@@ -23,6 +23,8 @@ def get_migration(location):
 def modify_object(obj, dct):
     scale = dct.get("__disaggregation__", 1) * dct.get("__multiplier__", 1)
     if scale != 1:
+        if 'amount' not in obj:
+            raise ValueError("Rescale needed but not `amount` field present")
         obj = rescale_object(obj, scale)
     for k, v in dct.items():
         if k not in ("__disaggregation__", "__multiplier__"):
