@@ -3,7 +3,7 @@ from os import path
 
 here = path.abspath(path.dirname(__file__))
 
-requirements = ["brightway_io", "stats_arrays"]
+requirements = ["stats_arrays"]
 test_requirements = ["pytest"]
 
 v_temp = {}
