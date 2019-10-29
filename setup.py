@@ -17,6 +17,7 @@ setup(
     version=version,
     description="Migration data and utilities for Brightway IO and LCA in general",
     long_description=open(path.join(here, "README.md")).read(),
+    long_description_content_type="text/markdown",
     url="https://github.com/brightway-lca/bw_migrations",
     author="Chris Mutel",
     author_email="cmutel@gmail.com",
