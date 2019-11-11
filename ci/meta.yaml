@@ -20,7 +20,7 @@ requirements:
   run:
     - python
     - stats_arrays
-    - brightway_io-dev
+    - bw_io-dev
 
 test:
   imports:
