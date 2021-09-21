@@ -17,17 +17,6 @@
     ],
     [
       [
-        "Aldrin",
-        "air"
-      ],
-      {
-        "unit": "kilogram",
-        "__multiplier__": 1000,
-        "name": "Aldrin"
-      }
-    ],
-    [
-      [
         "As",
         "air"
       ],
@@ -44,7 +33,8 @@
       ],
       {
         "unit": "kilogram",
-        "__multiplier__": 1000
+        "__multiplier__": 1000,
+        "name": "Benzene"
       }
     ],
     [
@@ -199,17 +189,6 @@
         "unit": "kilogram",
         "__multiplier__": 1000,
         "name": "Cadmium"
-      }
-    ],
-    [
-      [
-        "Chlordane",
-        "air"
-      ],
-      {
-        "unit": "kilogram",
-        "__multiplier__": 1000,
-        "name": "Chlordane"
       }
     ],
     [
@@ -645,7 +624,9 @@
         "unit": "kilogram",
         "__multiplier__": 1000,
         "name": "Suspended solids, unspecified",
-        "categories": ["water"]
+        "categories": [
+          "water"
+        ]
       }
     ],
     [
@@ -888,7 +869,7 @@
           "unit": "kilogram",
           "categories": [
             "natural resource",
-            "in ground"
+            "biotic"
           ],
           "__multiplier__": 1000,
           "__disaggregation__": 0.5,
@@ -898,7 +879,7 @@
           "unit": "kilogram",
           "categories": [
             "natural resource",
-            "in ground"
+            "biotic"
           ],
           "__multiplier__": 1000,
           "__disaggregation__": 0.5,
@@ -1030,12 +1011,12 @@
         null
       ],
       {
-        "unit": "kilogram",
+        "unit": "cubic meter",
         "categories": [
           "natural resource",
           "in ground"
         ],
-        "__multiplier__": 1000,
+        "__multiplier__": 1470,
         "name": "Gas, natural, in ground"
       }
     ],
@@ -1045,12 +1026,12 @@
         null
       ],
       {
-        "unit": "kilogram",
+        "unit": "cubic meter",
         "categories": [
           "natural resource",
           "in ground"
         ],
-        "__multiplier__": 1000,
+        "__multiplier__": 1470,
         "name": "Gas, natural, in ground"
       }
     ],
@@ -1063,7 +1044,7 @@
         "unit": "kilogram",
         "categories": [
           "natural resource",
-          "in ground"
+          "biotic"
         ],
         "__multiplier__": 1000,
         "name": "Peat, in ground"
@@ -1153,10 +1134,10 @@
         "unit": "kilogram",
         "categories": [
           "natural resource",
-          "in ground"
+          "in air"
         ],
         "__multiplier__": 1000,
-        "name": "Carbon dioxide, non-fossil"
+        "name": "Carbon dioxide, in air"
       }
     ],
     [
@@ -1165,7 +1146,7 @@
         null
       ],
       {
-        "unit": "kilogram",
+        "unit": "cubic meter",
         "categories": [
           "natural resource",
           "in water"
@@ -1268,9 +1249,15 @@
       "email": "cmutel@gmail.com",
       "path": "https://chris.mutel.org/",
       "role": "author"
+    },
+    {
+      "title": "Benjamin W. Portner",
+      "email": "benjamin.portner@bauhaus-luftfahrt.net",
+      "role": "author"
     }
   ],
   "missing flows": [
+    "Aldrin, air",
     "Aquatic plants",
     "Building stones",
     "C",
