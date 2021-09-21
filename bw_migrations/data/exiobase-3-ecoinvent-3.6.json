@@ -624,7 +624,9 @@
         "unit": "kilogram",
         "__multiplier__": 1000,
         "name": "Suspended solids, unspecified",
-        "categories": ["water"]
+        "categories": [
+          "water"
+        ]
       }
     ],
     [
@@ -1246,6 +1248,11 @@
       "title": "Chris Mutel",
       "email": "cmutel@gmail.com",
       "path": "https://chris.mutel.org/",
+      "role": "author"
+    },
+    {
+      "title": "Benjamin W. Portner",
+      "email": "benjamin.portner@bauhaus-luftfahrt.net",
       "role": "author"
     }
   ],
