@@ -62,7 +62,7 @@ jobs:
     displayName: Install packages
 
   - bash: |
-      pytest --color=yes -v --cov-report html --cov=bw_processing
+      pytest --color=yes -v --cov-report html --cov=bw_migrations
     displayName: pytest
 
 - job:
@@ -120,7 +120,7 @@ jobs:
     displayName: Install packages
 
   - bash: |
-      pytest --color=yes -v --cov-report xml --cov=bw_processing
+      pytest --color=yes -v --cov-report xml --cov=bw_migrations
     displayName: pytest
 
 - job:
@@ -175,5 +175,5 @@ jobs:
     displayName: Install packages
 
   - script: |
-      pytest --color=yes -v --cov-report xml --cov=bw_processing
+      pytest --color=yes -v --cov-report xml --cov=bw_migrations
     displayName: pytest
