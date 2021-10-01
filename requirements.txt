@@ -1,1 +1,3 @@
 stats_arrays
+bw2data
+pandas

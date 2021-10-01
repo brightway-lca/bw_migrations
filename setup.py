@@ -3,7 +3,7 @@ from os import path
 
 here = path.abspath(path.dirname(__file__))
 
-requirements = ["stats_arrays"]
+requirements = ["stats_arrays", "bw2data", "pandas"]
 test_requirements = ["pytest"]
 
 v_temp = {}

@@ -1,0 +1,179 @@
+pr:
+  autoCancel: true
+  branches:
+    include:
+    - master
+
+jobs:
+- job:
+  displayName: ubuntu-20.04-conda
+  pool:
+    vmImage: 'ubuntu-20.04'
+  strategy:
+    matrix:
+      Python38:
+        python.version: '3.8'
+      Python39:
+        python.version: '3.9'
+
+  timeoutInMinutes: 8
+  steps:
+  - bash: echo "##vso[task.prependpath]$CONDA/bin"
+    displayName: Add conda to PATH
+
+  - bash: conda create --yes --quiet --name bw
+    displayName: Create Anaconda environment
+
+  - bash: |
+      source activate bw
+      conda install --yes --quiet -c defaults -c conda-forge -c cmutel --name bw python=$PYTHON_VERSION bw2data stats_arrays pandas pytest pytest-azurepipelines
+    displayName: Install Anaconda packages
+
+  - bash: |
+      source activate bw
+      pytest --color=yes -v
+    displayName: pytest
+
+- job:
+  displayName: ubuntu-20.04-pip
+  pool:
+    vmImage: 'ubuntu-20.04'
+  strategy:
+    matrix:
+      Python38:
+        python.version: '3.8'
+      Python39:
+        python.version: '3.9'
+
+  timeoutInMinutes: 8
+  steps:
+  - task: UsePythonVersion@0
+    inputs:
+      versionSpec: '$(python.version)'
+
+  - bash: |
+      python --version
+      pip --version
+      pip install stats_arrays pandas pytest pytest-cov pytest-azurepipelines bw2data
+      echo "which pytest"
+      which pytest
+      echo "pytest version"
+      pytest --version
+    displayName: Install packages
+
+  - bash: |
+      pytest --color=yes -v --cov-report html --cov=bw_processing
+    displayName: pytest
+
+- job:
+  displayName: macOS-10.14-39-conda
+  pool:
+    vmImage: 'macOS-10.14'
+  strategy:
+    matrix:
+      Python38:
+        python.version: '3.8'
+      Python39:
+        python.version: '3.9'
+
+  timeoutInMinutes: 8
+  steps:
+  - bash: echo "##vso[task.prependpath]$CONDA/bin"
+    displayName: Add conda to PATH
+
+  - bash: sudo chown -R $USER $CONDA
+    displayName: Take ownership of conda installation
+
+  - bash: conda create --yes --quiet --name bw
+    displayName: Create Anaconda environment
+
+  - bash: |
+      source activate bw
+      conda install --yes --quiet -c defaults -c conda-forge -c cmutel --name bw python=$PYTHON_VERSION stats_arrays bw2data pandas pytest pytest-azurepipelines
+    displayName: Install Anaconda packages
+
+  - bash: |
+      source activate bw
+      pytest --color=yes -v
+    displayName: pytest
+
+- job:
+  displayName: macOS-10.14-pip
+  pool:
+    vmImage: 'macOS-10.14'
+  strategy:
+    matrix:
+      Python38:
+        python.version: '3.8'
+      Python39:
+        python.version: '3.9'
+
+  timeoutInMinutes: 8
+  steps:
+  - task: UsePythonVersion@0
+    inputs:
+      versionSpec: '$(python.version)'
+
+  - bash: |
+      python --version
+      pip3 install bw2data stats_arrays pandas pytest pytest-cov pytest-azurepipelines
+    displayName: Install packages
+
+  - bash: |
+      pytest --color=yes -v --cov-report xml --cov=bw_processing
+    displayName: pytest
+
+- job:
+  displayName: vs2017-win2016-conda
+  pool:
+    vmImage: 'vs2017-win2016'
+  strategy:
+    matrix:
+      Python39:
+        python.version: '3.9'
+      Python38:
+        python.version: '3.8'
+
+  timeoutInMinutes: 8
+  steps:
+  - powershell: Write-Host "##vso[task.prependpath]$env:CONDA\Scripts"
+    displayName: Add conda to PATH
+
+  - script: conda create --yes --quiet --name bw
+    displayName: Create Anaconda environment
+
+  - script: |
+      call activate bw
+      conda install --yes --quiet -c defaults -c conda-forge -c cmutel --name bw python=%PYTHON_VERSION% stats_arrays bw2data pandas pytest pytest-azurepipelines
+    displayName: Install Anaconda packages
+
+  - script: |
+      call activate bw
+      pytest --color=yes -v
+    displayName: pytest
+
+- job:
+  displayName: vs2017-win2016-pip
+  pool:
+    vmImage: 'vs2017-win2016'
+  strategy:
+    matrix:
+      Python38:
+        python.version: '3.8'
+      Python39:
+        python.version: '3.9'
+
+  timeoutInMinutes: 8
+  steps:
+  - task: UsePythonVersion@0
+    inputs:
+      versionSpec: '$(python.version)'
+
+  - script: |
+      python --version
+      pip install stats_arrays bw2data pandas pytest pytest-cov pytest-azurepipelines
+    displayName: Install packages
+
+  - script: |
+      pytest --color=yes -v --cov-report xml --cov=bw_processing
+    displayName: pytest
